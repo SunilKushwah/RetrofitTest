@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private void getHeroes() {
 
         Retrofit retrofit = new Retrofit.Builder()
+                            .baseUrl(ApiRequest.BASE_URL)
                             .addConverterFactory(GsonConverterFactory.create())
                             .build();
 
